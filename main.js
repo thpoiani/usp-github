@@ -1,7 +1,10 @@
 navigator.geolocation.getCurrentPosition(function(position){
     var latitude = position.coords.latitude
     var longitude = position.coords.longitude
-    alert([latitude, longitude])
+    alert([
+        latitude,
+        longitude
+    ])
 
     var map = L.map('map').setView([latitude, longitude], 15);
 
